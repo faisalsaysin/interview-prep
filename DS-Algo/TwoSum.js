@@ -6,24 +6,24 @@
 
 function twoSum_brute(arr, sum) {
     for (let i = 0; i < arr.length; i++){
-        const part = sum - arr[i];
+        const key = sum - arr[i];
         for (let j = 0; j < arr.length; j++){
-            if (arr[j] === part && j !== i) {
+            if (arr[j] === key && j !== i) {
                 return [j, i];
             }
         }
     }
 }
 
-function twoSum_efficient(arr, sum) {
-    const map = new Map();
-    for (let i = 0; i < arr.length; i++){
-        const part = sum - arr[i];
-        if (map.has(part)) {
-            return [map.get(part), i]
+const twoSum = function(nums, target) {
+    const cache = {};
+    for(let i = 0; i < nums.length; i++){
+        const key = target - nums[i];
+        if(key in cache){
+            return [cache[key], i];
         }
-        map.set(arr[i], i);
+        cache[nums[i]] = i;
     }
-}
+};
 
 console.log(twoSum_efficient([2,7,11,15], 9));
