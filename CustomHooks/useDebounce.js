@@ -4,10 +4,12 @@ const useDebouce = (callback, delay) => {
     const [debounceValue, setDebounceValue] = React.useState();
 
     React.useEffect(() => {
-        const timer = setTimeout(() => {
-            callback(debounceValue);
+        if (debounceValue !== undefined) {
+            const timer = setTimeout(() => {
+                callback(debounceValue);
+            }, delay);
             return () => clearTimeout(timer);
-        }, delay);
+        }
     }, [debounceValue]);
 
     return (value) => setDebounceValue(value);

@@ -22,6 +22,7 @@ Array.prototype.myReduce = function (cb, initial) {
     for (let i = startIndex; i < this.length; i++) {
         acc = cb(acc, this[i], i, this);
     }
+    return acc;
 };
 
 Array.prototype.myFlat = function (depth = 1) {
