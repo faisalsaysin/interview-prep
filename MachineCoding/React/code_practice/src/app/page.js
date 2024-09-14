@@ -7,6 +7,7 @@ export default function HomePage() {
         { id: 2, title: "Form", link: "/form" },
         { id: 3, title: "CRUD", link: "/crud" },
         { id: 4, title: "Stopwatch", link: "/stopwatch" },
+        { id: 5, title: "Hooks", link: "/hooks" },
     ];
 
     return (
