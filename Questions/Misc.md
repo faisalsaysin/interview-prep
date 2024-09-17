@@ -54,7 +54,7 @@ _Q3 - How can we test if accessibility standards are followed_
 
 A3 - Lighthouse and testing navigation through keyboards.
 
-## MISC
+## Browser
 
 _Q1 - What happens when some hits a url in browser?_
 
