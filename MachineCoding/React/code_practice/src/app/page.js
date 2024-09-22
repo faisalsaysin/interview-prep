@@ -8,6 +8,7 @@ export default function HomePage() {
         { id: 3, title: "CRUD", link: "/crud" },
         { id: 4, title: "Stopwatch", link: "/stopwatch" },
         { id: 5, title: "Hooks", link: "/hooks" },
+        { id: 6, title: "Tree Structure", link: "/tree-structure" },
     ];
 
     return (
