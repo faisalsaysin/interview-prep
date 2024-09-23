@@ -9,6 +9,7 @@ export default function HomePage() {
         { id: 4, title: "Stopwatch", link: "/stopwatch" },
         { id: 5, title: "Hooks", link: "/hooks" },
         { id: 6, title: "Tree Structure", link: "/tree-structure" },
+        { id: 7, title: "Auto Suggestion", link: "/auto-suggestion" },
     ];
 
     return (
