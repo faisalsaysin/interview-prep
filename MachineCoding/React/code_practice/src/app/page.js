@@ -10,6 +10,7 @@ export default function HomePage() {
         { id: 5, title: "Hooks", link: "/hooks" },
         { id: 6, title: "Tree Structure", link: "/tree-structure" },
         { id: 7, title: "Auto Suggestion", link: "/auto-suggestion" },
+        { id: 8, title: "Country Game", link: "/country-game" },
     ];
 
     return (

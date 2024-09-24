@@ -4,6 +4,8 @@
         "checkJs": true,
         "paths": {
             "@/*": ["./src/*"]
-        }
+        },
+        "target": "ES6",
+        "moduleResolution": "Node"
     }
 }
